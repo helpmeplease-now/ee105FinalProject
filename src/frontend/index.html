@@ -1,0 +1,38 @@
+<!-- ..\frontend\index.html -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gesture Recognition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="connection-screen" class="visible screen">
+        <h1>Gesture Recognition</h1>
+        <p id="conn-status">Connecting...</p>
+        <button id="retry-btn">Retry</button>
+    </div>
+
+    <div id="main-screen" class="screen">
+        <h2 id="gesture-label">--</h2>
+
+        <div class="proximity-bar">
+            <div id="conf-fill" class="fill"></div>
+        </div>
+        <p id="conf-text">Proximity: 0</p>
+
+        <div id="log"></div>
+
+        <div class="nav-2048">
+            <a href="2048.html" id="play-2048-btn">Play 2048 with Gestures →</a>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

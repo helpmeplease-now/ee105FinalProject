@@ -1,0 +1,5 @@
+torch
+numpy
+pyserial
+flask
+flask-cors

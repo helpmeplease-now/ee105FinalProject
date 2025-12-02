@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>2048 – Gesture Control</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="game2048-body">
+
+    <div class="game2048-wrapper">
+        <header class="game2048-header">
+            <div class="game2048-title-block">
+                <h1>2048</h1>
+                <div class="game2048-subtitle">Gesture Edition</div>
+            </div>
+            <div class="game2048-panels">
+                <div class="game2048-panel">
+                    <div class="panel-label">Score</div>
+                    <div id="score" class="panel-value">0</div>
+                </div>
+                <div class="game2048-panel">
+                    <div class="panel-label">Best</div>
+                    <div id="best-score" class="panel-value">0</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="game2048-status">
+            <div id="status-text">Use gestures or arrow keys to play.</div>
+        </div>
+
+        <div id="board" class="game2048-board">
+            <!-- 4x4 cells -->
+            <div class="row">
+                <div class="cell">
+                    <div class="tile" id="tile-0-0"></div>
+                </div>
+                <div class="cell">
+                    <div class="tile" id="tile-0-1"></div>
+                </div>
+                <div class="cell">
+                    <div class="tile" id="tile-0-2"></div>
+                </div>
+                <div class="cell">
+                    <div class="tile" id="tile-0-3"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <div class="tile" id="tile-1-0"></div>
+                </div>
+                <div class="cell">
+                    <div class="tile" id="tile-1-1"></div>
+                </div>
+                <div class="cell">
+                    <div class="tile" id="tile-1-2"></div>
+                </div>
+                <div class="cell">
+                    <div class="tile" id="tile-1-3"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <div class="tile" id="tile-2-0"></div>
+                </div>
+                <div class="cell">
+                    <div class="tile" id="tile-2-1"></div>
+                </div>
+                <div class="cell">
+                    <div class="tile" id="tile-2-2"></div>
+                </div>
+                <div class="cell">
+                    <div class="tile" id="tile-2-3"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <div class="tile" id="tile-3-0"></div>
+                </div>
+                <div class="cell">
+                    <div class="tile" id="tile-3-1"></div>
+                </div>
+                <div class="cell">
+                    <div class="tile" id="tile-3-2"></div>
+                </div>
+                <div class="cell">
+                    <div class="tile" id="tile-3-3"></div>
+                </div>
+            </div>
+            <div id="overlay" class="overlay hidden">
+                <div id="overlay-text"></div>
+                <button id="restart-btn" class="game2048-button">Restart</button>
+            </div>
+        </div>
+
+        <div class="game2048-footer">
+            <div class="game2048-gesture-hint">
+                Gestures: ↑ up, ↓ down, ← left, → right
+            </div>
+            <div class="game2048-key-hint">
+                You can also use keyboard arrows.
+            </div>
+            <a href="index.html" class="game2048-link">← Back to gesture viewer</a>
+        </div>
+    </div>
+
+    <script src="game2048.js"></script>
+</body>
+
+</html>
